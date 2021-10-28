@@ -6,10 +6,15 @@ body {
 
 
 header {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .nav_links a, a:visited {
@@ -83,6 +88,9 @@ header {
     body > header {
         position: sticky;
         top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
     }
 
     .card {
